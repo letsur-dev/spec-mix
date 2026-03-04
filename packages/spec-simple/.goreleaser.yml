@@ -27,10 +27,10 @@ checksum:
 
 brews:
   - repository:
-      owner: letsur
+      owner: letsur-dev
       name: homebrew-tap
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
-    homepage: https://github.com/letsur/spec-kit
+    homepage: https://github.com/letsur-dev/spec-mix
     description: Simplified SDD toolkit for Claude Code
     install: |
       bin.install "spec-simple"
