@@ -23,6 +23,9 @@ archives:
         format: zip
 
 release:
+  github:
+    owner: letsur-dev
+    name: homebrew-tap
   replace_existing_draft: true
   replace_existing_artifacts: true
 
@@ -33,7 +36,6 @@ brews:
   - repository:
       owner: letsur-dev
       name: homebrew-tap
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: https://github.com/letsur-dev/spec-mix
     description: Simplified SDD toolkit for Claude Code
     install: |
