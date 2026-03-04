@@ -25,7 +25,7 @@ jobs:
         run: echo "version=${GITHUB_REF_NAME#spec-simple/}" >> "$GITHUB_OUTPUT"
 
       - name: Create local version tag for GoReleaser
-        run: git tag "${{ steps.tag.outputs.version }}" HEAD
+        run: git tag -f "${{ steps.tag.outputs.version }}" HEAD
 
       - uses: goreleaser/goreleaser-action@v6
         with:
