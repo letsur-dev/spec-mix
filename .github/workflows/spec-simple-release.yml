@@ -36,3 +36,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
           GORELEASER_CURRENT_TAG: ${{ steps.tag.outputs.version }}
+
+      - name: Remove source code archives from release
+        run: |
+          VERSION="${{ steps.tag.outputs.version }}"
+          gh release delete-asset "$VERSION" "$VERSION.tar.gz" --repo letsur-dev/homebrew-tap --yes 2>/dev/null || true
+          gh release delete-asset "$VERSION" "$VERSION.zip" --repo letsur-dev/homebrew-tap --yes 2>/dev/null || true
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
