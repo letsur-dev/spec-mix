@@ -7,7 +7,7 @@
 ## 1. 클론 및 브랜치 전환
 
 ```bash
-git clone https://github.com/dan1901/spec-mix.git
+git clone https://github.com/letsur-dev/spec-mix.git
 cd spec-mix
 # 기능 브랜치에서 작업
 git checkout -b your-feature-branch
@@ -60,7 +60,7 @@ uvx --from . spec-mix init demo-uvx --ai copilot --ignore-agent-tools --script s
 ```bash
 # 먼저 작업 브랜치를 푸시
 git push origin your-feature-branch
-uvx --from git+https://github.com/dan1901/spec-mix.git@your-feature-branch spec-mix init demo-branch-test --script ps
+uvx --from git+https://github.com/letsur-dev/spec-mix.git@your-feature-branch spec-mix init demo-branch-test --script ps
 ```
 
 ### 4a. 절대 경로 uvx (어디서나 실행)

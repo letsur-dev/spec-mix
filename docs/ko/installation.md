@@ -15,15 +15,15 @@
 가장 쉬운 시작 방법은 새 프로젝트를 초기화하는 것입니다:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME>
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME>
 ```
 
 또는 현재 디렉토리에 초기화:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init .
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init .
 # 또는 --here 플래그 사용
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init --here
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init --here
 ```
 
 ### AI 에이전트 지정
@@ -31,11 +31,11 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init --here
 초기화 시 AI 에이전트를 미리 지정할 수 있습니다:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai claude
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai gemini
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai copilot
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai codebuddy
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai antigravity
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai claude
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai gemini
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai copilot
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai codebuddy
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai antigravity
 ```
 
 ### 스크립트 유형 지정 (Shell vs PowerShell)
@@ -51,8 +51,8 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_na
 특정 스크립트 유형 강제:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --script sh
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --script ps
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --script sh
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --script ps
 ```
 
 ### 에이전트 도구 확인 무시
@@ -60,7 +60,7 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_na
 도구 확인 없이 템플릿을 가져오고 싶다면:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --ai claude --ignore-agent-tools
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --ai claude --ignore-agent-tools
 ```
 
 ### 언어 선택
@@ -69,10 +69,10 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_na
 
 ```bash
 # 한국어로 초기화
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --language ko
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --language ko
 
 # 영어 (기본값)
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --language en
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --language en
 ```
 
 ### 미션 선택
@@ -81,17 +81,17 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_na
 
 ```bash
 # 소프트웨어 개발 (기본값)
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --mission software-dev
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --mission software-dev
 
 # 연구 프로젝트
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <project_name> --mission research
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <project_name> --mission research
 ```
 
 ### 모든 옵션 결합
 
 ```bash
 # 한국어 연구 프로젝트를 Claude로
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init my-research \
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init my-research \
   --language ko \
   --mission research \
   --ai claude \
@@ -115,7 +115,7 @@ uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init my-research
 프로젝트에서 `spec-mix`를 전역적으로 사용하려면:
 
 ```bash
-uv tool install spec-mix --from git+https://github.com/dan1901/spec-mix.git
+uv tool install spec-mix --from git+https://github.com/letsur-dev/spec-mix.git
 ```
 
 설치 후:
@@ -156,7 +156,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 최신 버전을 사용하고 있는지 확인하세요:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git@main spec-mix init --help
+uvx --from git+https://github.com/letsur-dev/spec-mix.git@main spec-mix init --help
 ```
 
 ### 명령어가 AI 에이전트에 나타나지 않음

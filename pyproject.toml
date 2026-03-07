@@ -16,10 +16,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/dan1901/spec-mix"
+Homepage = "https://github.com/letsur-dev/spec-mix"
 Documentation = "https://dan1901.github.io/spec-mix/"
-Repository = "https://github.com/dan1901/spec-mix"
-Issues = "https://github.com/dan1901/spec-mix/issues"
+Repository = "https://github.com/letsur-dev/spec-mix"
+Issues = "https://github.com/letsur-dev/spec-mix/issues"
 
 [project.scripts]
 spec-mix = "specmix:main"

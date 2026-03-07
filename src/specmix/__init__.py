@@ -18,7 +18,7 @@ Usage:
     uvx spec-mix init --here
 
 Or install globally:
-    uv tool install spec-mix --from git+https://github.com/dan1901/spec-mix.git
+    uv tool install spec-mix --from git+https://github.com/letsur-dev/spec-mix.git
     spec-mix init <project-name>
     spec-mix init .
     spec-mix init --here
@@ -595,14 +595,15 @@ def merge_json_files(existing_path: Path, new_content: dict, verbose: bool = Fal
     return merged
 
 def download_template_from_github(ai_assistant: str, download_dir: Path, *, script_type: str = "sh", verbose: bool = True, show_progress: bool = True, client: httpx.Client = None, debug: bool = False, github_token: str = None) -> Tuple[Path, dict]:
-    repo_owner = "dan1901"
+    repo_owner = "letsur-dev"
     repo_name = "spec-mix"
     if client is None:
         client = httpx.Client(verify=ssl_context)
 
     if verbose:
-        console.print("[cyan]Fetching latest release information...[/cyan]")
-    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
+        console.print("[cyan]Fetching release information...[/cyan]")
+    tag = f"v{__version__}"
+    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/tags/{tag}"
 
     try:
         response = client.get(

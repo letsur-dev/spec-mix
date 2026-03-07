@@ -11,14 +11,14 @@
 사용 중인 코딩 에이전트에 따라 프로젝트를 초기화하세요:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME>
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME>
 ```
 
 스크립트 유형을 명시적으로 선택 (선택 사항):
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME> --script ps  # PowerShell 강제
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME> --script sh  # POSIX shell 강제
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME> --script ps  # PowerShell 강제
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME> --script sh  # POSIX shell 강제
 ```
 
 ### 2. 사양 생성

@@ -70,7 +70,7 @@ Spec-Driven Development는 전통적인 소프트웨어 개발의 **판도를 �
 한 번 설치하고 어디서나 사용:
 
 ```bash
-uv tool install spec-mix --from git+https://github.com/dan1901/spec-mix.git
+uv tool install spec-mix --from git+https://github.com/letsur-dev/spec-mix.git
 
 ```
 
@@ -85,7 +85,7 @@ spec-mix check
 spec-mix를 업그레이드하려면:
 
 ```bash
-uv tool install spec-mix --force --from git+https://github.com/dan1901/spec-mix.git
+uv tool install spec-mix --force --from git+https://github.com/letsur-dev/spec-mix.git
 
 ```
 
@@ -94,7 +94,7 @@ uv tool install spec-mix --force --from git+https://github.com/dan1901/spec-mix.
 설치 없이 직접 실행:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME>
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME>
 
 ```
 
