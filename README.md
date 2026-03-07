@@ -72,7 +72,7 @@ Choose your preferred installation method:
 Install once and use everywhere:
 
 ```bash
-uv tool install spec-mix --from git+https://github.com/dan1901/spec-mix.git
+uv tool install spec-mix --from git+https://github.com/letsur-dev/spec-mix.git
 
 ```
 
@@ -87,7 +87,7 @@ spec-mix check
 To upgrade spec-mix run:
 
 ```bash
-uv tool install spec-mix --force --from git+https://github.com/dan1901/spec-mix.git
+uv tool install spec-mix --force --from git+https://github.com/letsur-dev/spec-mix.git
 
 ```
 
@@ -96,7 +96,7 @@ uv tool install spec-mix --force --from git+https://github.com/dan1901/spec-mix.
 Run directly without installing:
 
 ```bash
-uvx --from git+https://github.com/dan1901/spec-mix.git spec-mix init <PROJECT_NAME>
+uvx --from git+https://github.com/letsur-dev/spec-mix.git spec-mix init <PROJECT_NAME>
 
 ```
 

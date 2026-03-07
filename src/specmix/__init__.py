@@ -18,7 +18,7 @@ Usage:
     uvx spec-mix init --here
 
 Or install globally:
-    uv tool install spec-mix --from git+https://github.com/dan1901/spec-mix.git
+    uv tool install spec-mix --from git+https://github.com/letsur-dev/spec-mix.git
     spec-mix init <project-name>
     spec-mix init .
     spec-mix init --here
