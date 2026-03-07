@@ -601,8 +601,9 @@ def download_template_from_github(ai_assistant: str, download_dir: Path, *, scri
         client = httpx.Client(verify=ssl_context)
 
     if verbose:
-        console.print("[cyan]Fetching latest release information...[/cyan]")
-    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
+        console.print("[cyan]Fetching release information...[/cyan]")
+    tag = f"v{__version__}"
+    api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/tags/{tag}"
 
     try:
         response = client.get(
