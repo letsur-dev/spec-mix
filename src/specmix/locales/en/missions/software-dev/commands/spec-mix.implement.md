@@ -44,9 +44,26 @@ planned → doing → for_review → done
 
 ---
 
+### STDD Override (any mode)
+
+If user specifies `--stdd` or `stdd` in arguments, use STDD methodology regardless of current mode.
+
+**STDD (Spec & Test Driven Development):**
+
+1. Transform phase/task into Zero-Ambiguity spec
+2. Write tests before code (Test-First)
+3. Implement targeting all tests
+4. Error-as-Prompt loop: fail → fix → retest
+5. Approval after all tests pass
+
+**See**: `/spec-mix.implement-stdd` for detailed workflow
+
+---
+
 ## Quick Reference
 
 | Mode | Task Unit | Review | Commands After |
 |------|-----------|--------|----------------|
 | Normal | Phase | Built-in Accept/Reject | `/spec-mix.merge` |
 | Pro | Work Package | `/spec-mix.review` | `/spec-mix.accept`, `/spec-mix.merge` |
+| STDD | Phase/WP | 5-stage cycle per unit | `/spec-mix.merge` |
